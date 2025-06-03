@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <!--Fonts-awesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!--style css-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/variables.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--Fonts-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--main css-->
+    <link rel="stylesheet" href="css/main.css">
     <title>E-commerce Vetements</title>
 </head>
+
 <body>
     <header>
-        <div class="log">
-            <img src="images/logo.png" alt="mon logo" class="logo">
-            <h1 class="star">STAR BOY</h1>
-        </div>
         <div class="navbar">
+            <div class="log">
+                <img src="images/logo.png" alt="mon logo" class="logo">
+                <h1 class="star">STAR BOY</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#Accueil">Accueil</a></li>
                     <li><a href="apropos.html">A propos</a></li>
-                    <li><a href="boutique.html">Boutique</a></li>
+                    <li class="dropdown">
+                        <a href="boutique.html">Boutique</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="boutique.html">Hommes</a></li>
+                            <li><a href="boutique.html">Femmes</a></li>
+                        </ul>
+                    </li>
                     <li><a href="servicesclient.html">Service client</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <div class="panier">
@@ -39,9 +50,45 @@
     </header>
     <section id="Accueil">
         <div class="block">
-        <video src="./video/video.mp4" autoplay="autoplay" muted=" " loop="infinite"></video>
+            <video src="./video/video.mp4" autoplay="autoplay" muted=" " loop="infinite"></video>
+            <div class="banner-content">
+                <h1>Nouvelle Collection STAR BOY <br></h1>
+                <p>Decouvrez nos vêtements tendances et elegants </p>
+                <div class="button">
+                    <a href="boutique.html" class="btn btn-primary"> Vers la boutique</a>
+                    <a href="contact.html" class="btn btn-secondary"> Contactez-nous</a>
+                </div>
+            </div>
         </div>
-
     </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-colonne">
+                <h3>A propos</h3>
+                <p>STAR BOY , Votre boutique de vêtements tendance et styles. qualite et elegance au rendez-vous.</p>
+            </div>
+            <div class="footer-colonne">
+                <h3>liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="servicesclient.html">Services Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-colonne">
+                <h3>Suivez-nous</h3>
+                <div class="icons-reseau">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <p> &copy;2025 STAR BOY. Tous droits reserves </p>
+        </div>
+    </footer>
 </body>
+
 </html>

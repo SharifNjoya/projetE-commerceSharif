@@ -1,0 +1,7 @@
+/*GEneral css*/
+@import url('./partials/general.css');
+
+/*partals css*/
+@import url('./partials/index.css');
+@import url('./partials/variables.css');
+@import url('./partials/footer.css');

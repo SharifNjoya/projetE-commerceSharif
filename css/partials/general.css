@@ -1,0 +1,16 @@
+        /*general rules*/
+        *{  
+            font-family: 'Raleway', sans-serif;       
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+    body {
+        padding-top: 80px;
+        font-family: var(--typo-main);
+
+    }
