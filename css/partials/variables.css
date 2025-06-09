@@ -1,14 +1,9 @@
-/* couleurs*/
+/* ============ VARIABLES ============ */
 :root {
-    --color-hover: #ff9800;
-    --footer-btn: #555;
-    --color-primary: #ff9800;
-    --color-secondary: #333;
-    /*typo*/
-    --typo-main: 'Playfair', serif;
-    /*size*/
-    --btn-padding: 12px 20px;
-    /* breakpoints*/
-    --medium-size: 768px;
-    --large-size: 962px;
+    --primary-color: #333;
+    --secondary-color: #ff9800;
+    --hover-color: #e65100;
+    --text-color: #333;
+    --l-bg: #f9f9f9;
+    --white: #fff;
 }

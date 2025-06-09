@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!--Fonts-awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--main css-->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- main css -->
     <link rel="stylesheet" href="css/main.css">
-    <title>E-commerce Vetements</title>
+    <title>E-commerce Vêtements</title>
 </head>
-
 <body>
     <header>
+        <!-- Navbar -->
         <div class="navbar">
             <div class="log">
-                <img src="images/logo.png" alt="mon logo" class="logo">
-                <h1 class="star">STAR BOY</h1>
+                <img src="images/logo.png" alt="Logo STAR FASHON" class="logo">
+                <h1 class="star">STAR FASHON</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#Accueil">Accueil</a></li>
+                    <li><a href="index.html">Accueil</a></li>
                     <li><a href="apropos.html">A propos</a></li>
                     <li class="dropdown">
                         <a href="boutique.html">Boutique</a>
@@ -39,117 +34,106 @@
                     </li>
                     <li><a href="servicesclient.html">Service client</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <div class="panier">
-                        <i class="fa-solid fa-user"></i>
-                        <li><a href="#moncompte">Mon compte</a></li>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
+                    <li class="panier">
+                        <a href="#moncompte"><i class="fa-solid fa-user"></i> Mon compte</a>
+                        <a href="#panier"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Hero Sect-->
+        <div class="hero-container">
+            <video src="./video/video.mp4" autoplay muted loop></video>
+            <div class="hero-content">
+                <h2>Nouvelle Collection STAR FASHON</h2>
+                <p>Découvrez nos vêtements tendances et élégants</p>
+                <div class="hero-buttons">
+                    <a href="boutique.html" class="btn btn-primary">Vers la boutique</a>
+                    <a href="contact.html" class="btn btn-secondary">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
     </header>
-    <section id="Accueil">
-        <div class="block">
-            <video src="./video/video.mp4" autoplay="autoplay" muted=" " loop="infinite"></video>
-            <div class="banner-content">
-                <h1>Nouvelle Collection STAR BOY <br></h1>
-                <p>Decouvrez nos vêtements tendances et elegants </p>
-                <div class="button">
-                    <a href="boutique.html" class="btn btn-primary"> Vers la boutique</a>
-                    <a href="contact.html" class="btn btn-secondary"> Contactez-nous</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--sect produits-->
-    <section class="produits-container">
-        <h2>Nos Derniers Produits</h2>
-        <div class="produits-content">
-            <div class="produit-card">
-                <img src="images/produits/produit1.png" alt="Pull nike femme">
-                <h3>Pull Nice</h3>
-                <p class="prix">129.99£</p>
-                <button class="add-cart">A jouter au panier</button>
-
-            </div>
-
-        </div>
-        <div class="produits-content">
-            <div class="produit-card">
-                <img src="images/produits/prduct2.png" alt="Maillot e-football">
-                <h3>Maillot E-foot</h3>
-                <p class="prix">29.99£</p>
-                <button class="add-cart">Ajouter au panier</button>
-
-            </div>
-
-        </div>
-        <div class="produits-content">
-            <div class="produit-card">
-                <img src="images/produits/prduct3.png" alt="real">
-                <h3>Maillot real madrid</h3>
-                <p class="prix">59.99£</p>
-                <button class="add-cart">Ajouet au panier</button>
-
-            </div>
-        </div>
-        <!--section meilleurs ventes-->
-        <section class="produits-container bestsellers">
-            <h2>Nos Meilleures Ventes</h2>
-            <div class="produits-content">
+    
+    <main>
+        <!-- Section Produits -->
+        <section class="produits-container">
+            <h2>Nos Derniers Produits</h2>
+            <div class="produits-grid">
                 <div class="produit-card">
-                    <img src="images/bestsell1.png" alt="t-tshirt hugo boss">
-                    <h3>T-shirt HUGO BOSS</h3>
-                    <p class="prix">49.99£</p>
+                    <img src="images/produits/produit1.png" alt="Pull Nike femme">
+                    <h3>Pull Nike</h3>
+                    <p class="prix">129.99€</p>
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
-            </div>
-                <div class="produits-content">
                 <div class="produit-card">
-                    <img src="images/bestsell2.png" alt="sweat Adidas femmes">
-                    <h3>Sweat Adidas</h3>
-                    <p class="prix">50.99£</p>
+                    <img src="images/produits/prduct2.png" alt="Maillot e-football">
+                    <h3>Maillot E-foot</h3>
+                    <p class="prix">29.99€</p>
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
-            </div>
-                <div class="produits-content">
                 <div class="produit-card">
-                    <img src="images/bestsell3.png" alt="pull TOMMY HIGTFIGHER">
-                    <h3>Pull Tommy Hightgigher</h3>
-                    <p class="prix">125.99£</p>
-                    <button class="add-cart">Ajouter au panier</button>
-                </div>
-            </div>
-                <div class="produits-content">
-                <div class="produit-card">
-                    <img src="images/bestsell4.png" alt="T-shirt Boss Noir">
-                    <h3>T-shirt Boss Noir</h3>
-                    <p class="prix">58.99£</p>
+                    <img src="images/produits/prduct3.png" alt="Maillot Real Madrid">
+                    <h3>Maillot Real Madrid</h3>
+                    <p class="prix">59.99€</p>
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
             </div>
         </section>
-    </section>
-    <!--Newsletter-->
-    <section class="newsletter">
-        <div class="newsletter-content">
-            <h2>Abonnez-vous a notre newsletter</h2>
-            <p>Recevez en exclusivite nos offres specilales et nouveautes</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Votre adresse email" required>
-                <button type="submit" class="btn btn-primary">S'abonner</button>
-            </form>
 
-        </div>
-    </section>
+        <!-- Section Meilleures Ventes -->
+        <section class="produits-container bestsellers">
+            <h2>Nos Meilleures Ventes</h2>
+            <div class="produits-grid">
+                <div class="produit-card">
+                    <img src="images/bestsell1.png" alt="T-shirt Hugo Boss">
+                    <h3>T-shirt HUGO BOSS</h3>
+                    <p class="prix">49.99€</p>
+                    <button class="add-cart">Ajouter au panier</button>
+                </div>
+                <div class="produit-card">
+                    <img src="images/bestsell2.png" alt="Sweat Adidas femmes">
+                    <h3>Sweat Adidas</h3>
+                    <p class="prix">50.99€</p>
+                    <button class="add-cart">Ajouter au panier</button>
+                </div>
+                <div class="produit-card">
+                    <img src="images/bestsell3.png" alt="Pull Tommy Hilfiger">
+                    <h3>Pull Tommy Hilfiger</h3>
+                    <p class="prix">125.99€</p>
+                    <button class="add-cart">Ajouter au panier</button>
+                </div>
+                <div class="produit-card">
+                    <img src="images/bestsell4.png" alt="T-shirt Boss Noir">
+                    <h3>T-shirt Boss Noir</h3>
+                    <p class="prix">58.99€</p>
+                    <button class="add-cart">Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Abonnez-vous à notre newsletter</h2>
+                <p>Recevez en exclusivité nos offres spéciales et nouveautés</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn btn-primary">S'abonner</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-colonne">
                 <h3>A propos</h3>
-                <p>STAR BOY , Votre boutique de vêtements tendance et styles. qualite et elegance au rendez-vous.</p>
+                <p>STAR FASHON, votre boutique de vêtements tendance et styles. Qualité et élégance au rendez-vous.</p>
             </div>
             <div class="footer-colonne">
-                <h3>liens rapides</h3>
+                <h3>Liens rapides</h3>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="boutique.html">Boutique</a></li>
@@ -167,9 +151,8 @@
             </div>
         </div>
         <div class="footer-top">
-            <p> &copy;2025 STAR BOY. Tous droits reserves </p>
+            <p>&copy; 2025 STAR FASHON. Tous droits réservés</p>
         </div>
     </footer>
 </body>
-
 </html>

@@ -1,41 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <!--Fonts-awesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!--style css-->
-    <link rel="stylesheet" href="css/apropos.css">
-    <title>E-commerce Vetements</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>E-commerce Vêtements</title>
 </head>
 <body>
     <header>
-        <div class="log">
-            <img src="images/logo.png" alt="mon logo" class="logo">
-            <h1 class="star">STAR BOY</h1>
-        </div>
+        <!-- Navbar -->
         <div class="navbar">
+            <div class="log">
+                <img src="images/logo.png" alt="Logo STAR FASHON" class="logo">
+                <h1 class="star">STAR FASHON</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#apropos">A propos</a></li>
-                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li class="dropdown">
+                        <a href="boutique.html">Boutique</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="boutique.html">Hommes</a></li>
+                            <li><a href="boutique.html">Femmes</a></li>
+                        </ul>
+                    </li>
                     <li><a href="servicesclient.html">Service client</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <div class="panier">
-                        <i class="fa-solid fa-user"></i>
-                        <li><a href="#moncompte">Mon compte</a></li>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
+                    <li class="panier">
+                        <a href="#moncompte"><i class="fa-solid fa-user"></i> Mon compte</a>
+                        <a href="#panier"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Hero Sect-->
+        <div class="about-container">
+            <img src="images/about1.jpg" alt="images a propos">
+            <div class="about-content">
+                <h2>Notre histoire</h2>
+                <p>Découvrez l'univers STAR FASHON et notre passion pour la mode</p>
+
+            </div>
+        </div>
     </header>
     
+    <main id="propos">
+        <!--About section-->
+        <section class="histoire">
+            <h2>Qui sommes-nous ?</h2>
+            <div class="histoire-content">
+                <div class="histoire-text">
+                    <p>STAR FASHON est née en 2015 d'une passion commune pour la mode accessible. Notre équipe de stylistes sélectionne avec soin chaque pièce pour vous offrir des vêtements qui allient qualité, confort et style.</p>
+                    <p>Nous collaborons avec des créateurs talentueux et des marques éthiques pour vous proposer des collections exclusives et responsables.</p>
+                </div>
+                <img src="images/team2.jpg" alt="image boutique">
+            </div>
+        </section>
+        <!--Marques-->
+        <section class="marques">
+            <h2>Nos Marques</h2>
+            <div class="marques-container">
+                <div class="marque-card">
+                    <img src="images/marque1.jpg" alt="Tommy hilfiger">
+                    <h3>Tommy Hilfiger</h3>
+                    <p>Chic Americain Intemporel</p>
+               </div>  
+                <div class="marque-card">
+                    <img src="images/marque2.jpg" alt="Diesel">
+                    <h3>D Diesel</h3>
+                    <p>Tentances Streetwear</p>
+                </div>       
+                <div class="marque-card">
+                    <img src="images/marque3.jpg" alt="HUGO BOSS">
+                    <h3>HUGO BOSS</h3>
+                    <p>Mode eco-responsable</p>
+                </div>  
+            </div>
+        </section>
+        <!--sect temoignages-->
+        <section class="temoignages">
+            <h2>Temoignages Clients</h2>
+            <div class="temoignages-container">
+                <div class="temoignage-card">
+                    <div class="client">
+                        <img src="images/client1.jpg" alt="Client Marthus .">
+                        <div>
+                            <h3>Marthus Patrick.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Je suis fidèle à STAR FASHON depuis 3 ans. La qualité des vêtements est exceptionnelle et le service client toujours à l'écoute."</p>
+                </div>
+                <div class="temoignage-card">
+                    <div class="client">
+                        <img src="images/client2.jpg" alt="Client Marie D.">
+                        <div>
+                            <h3>Marie D.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p>"Les conseils des stylistes m'ont permis de trouver un style qui me correspond vraiment. Livraison rapide et emballage soigné."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-colonne">
+                <h3>A propos</h3>
+                <p>STAR FASHON, votre boutique de vêtements tendance et styles. Qualité et élégance au rendez-vous.</p>
+            </div>
+            <div class="footer-colonne">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="servicesclient.html">Services Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-colonne">
+                <h3>Suivez-nous</h3>
+                <div class="icons-reseau">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <p>&copy; 2025 STAR FASHON. Tous droits réservés</p>
+        </div>
+    </footer>
 </body>
 </html>
