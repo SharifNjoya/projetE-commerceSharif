@@ -1,41 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <!--Fonts-awesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!--style css-->
-    <link rel="stylesheet" href="css/servivesclient.css">
-    <title>E-commerce Vetements</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Service Client - STAR FASHON</title>
 </head>
 <body>
     <header>
-        <div class="log">
-            <img src="images/logo.png" alt="mon logo" class="logo">
-            <h1 class="star">STAR BOY</h1>
-        </div>
+        <!-- Navbar (identique aux autres pages) -->
         <div class="navbar">
+            <div class="log">
+                <img src="images/logo.png" alt="Logo STAR FASHON" class="logo">
+                <h1 class="star">STAR FASHON</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="apropos.html">A propos</a></li>
-                    <li><a href="boutique.html">Boutique</a></li>
-                    <li><a href="#servivesclient">Service client</a></li>
+                    <li class="dropdown">
+                        <a href="boutique.html">Boutique</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="boutique.html">Hommes</a></li>
+                            <li><a href="boutique.html">Femmes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="servicesclient.html">Service client</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <div class="panier">
-                        <i class="fa-solid fa-user"></i>
-                        <li><a href="#moncompte">Mon compte</a></li>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
+                    <li class="panier">
+                        <a href="#moncompte"><i class="fa-solid fa-user"></i> Mon compte</a>
+                        <a href="#panier"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Hero Sect Service -->
+        <div class="services-hero">
+            <div class="services-hero-content">
+                <h2>Votre satisfaction, notre priorité</h2>
+                <p>Nous sommes là pour vous accompagner à chaque étape</p>
+            </div>
+        </div>
     </header>
     
+    <main id="services">
+        <section class="services-section">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>Livraison</h3>
+                <ul>
+                    <li>Livraison standard offerte à partir de 50€</li>
+                    <li>Livraison express en 24/48h</li>
+                    <li>Suivi de commande en temps réel</li>
+                    <li>Retrait en magasin possible</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-undo-alt"></i>
+                </div>
+                <h3>Retours & Échanges</h3>
+                <ul>
+                    <li>Délai de retour : 30 jours</li>
+                    <li>Retours gratuits</li>
+                    <li>Échanges taille/couleur</li>
+                    <li>Processus simplifié</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3>Paiement Sécurisé</h3>
+                <ul>
+                    <li>Paiement 100% sécurisé</li>
+                    <li>CB, PayPal, Virement</li>
+                    <li>Paiement en 3x sans frais</li>
+                    <li>Données cryptées</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3>Support Client</h3>
+                <ul>
+                    <li>Assistance 7j/7</li>
+                    <li>Réponse sous 24h</li>
+                    <li>Chat en direct</li>
+                    <li>FAQ complète</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--info-->
+<section class="faq-section">
+    <h2>Questions Fréquentes</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-toggle">
+            <label for="faq1" class="faq-question">
+                Comment suivre ma commande ?
+                <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="faq-answer">
+                <p>Vous recevrez un email avec un lien de suivi dès l'expédition. Vous pouvez aussi consulter votre compte client sur notre site.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-toggle">
+            <label for="faq2" class="faq-question">
+                Quelles sont les tailles disponibles ?
+                <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="faq-answer">
+                <p>Nos vêtements sont disponibles du XS au XXL. Consultez notre guide des tailles pour des mesures précises.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-toggle">
+            <label for="faq3" class="faq-question">
+                Puis-je modifier mon adresse de livraison ?
+                <i class="fas fa-chevron-down"></i>
+            </label>
+            <div class="faq-answer">
+                <p>Oui, tant que votre commande n'a pas été expédiée. Contactez-nous rapidement par chat ou email.</p>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-colonne">
+                <h3>A propos</h3>
+                <p>STAR FASHON, votre boutique de vêtements tendance et styles. Qualité et élégance au rendez-vous.</p>
+            </div>
+            <div class="footer-colonne">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="servicesclient.html">Services Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-colonne">
+                <h3>Suivez-nous</h3>
+                <div class="icons-reseau">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <p>&copy; 2025 STAR FASHON. Tous droits réservés</p>
+        </div>
+    </footer>
 </body>
 </html>
