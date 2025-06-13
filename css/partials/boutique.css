@@ -1,0 +1,203 @@
+/* hero section*/
+.boutique-container {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/boutique.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    margin-top: 80px;
+}
+
+    .boutique-content {
+        max-width: 800px;
+        padding: 2rem;
+    }
+
+        .boutique-container h2 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair', serif;
+        }
+
+            .boutique-container p {
+                font-size: 1.2rem;
+                font-weight: 300;
+                margin-bottom: 2rem;
+            }
+/*categorie*/
+.filtres {
+    margin: 2rem 0;
+}
+
+    .filtres-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+        .filtres-ligne {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.8rem;
+        }
+            .add-cart.active {
+                background: #333;
+                color: white;
+                border-color: #333;
+            }
+ /*main boutique*/
+#boutique h2 {
+    text-align: center;
+    font-family: 'Playfair', serif;
+    font-size: 2rem;
+    font-weight: 250;
+    margin: 3rem 0;
+    color: #333;
+}
+
+    .produits-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin: 3rem 0;
+        justify-items: center; 
+    }
+
+        .produit-card {
+            width: 100%; 
+            max-width: 300px; 
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+            .produit-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+
+                .produit-image {
+                    position: relative;
+                    height: 300px;
+                    overflow: hidden;
+                }
+
+                    .produit-image img {
+                        width: 100%;
+                        height: auto;
+                        transition: transform 0.5s ease;
+                    }
+
+                        .produit-card:hover .produit-image img {
+                            transform: scale(1.05);
+                        }
+
+    .badge-nouveau, .badge-promo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+        .badge-nouveau {
+            background: #4CAF50;
+            color: white;
+        }
+
+            .badge-promo {
+                background: #f44336;
+                color: white;
+            }
+
+                .btn-favori {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 10px;
+                    background: white;
+                    border: none;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+
+                    .btn-favori:hover {
+                        background: #f44336;
+                        color: white;
+                    }
+
+                        .produit-info {
+                            padding: 1.5rem;
+                        }
+
+                            .produit-info h3 {
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                margin-bottom: 0.8rem;
+                                font-family: 'Raleway', sans-serif;
+                            }
+
+                                .produit-prix {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.8rem;
+                                    margin-bottom: 1.2rem;
+                                }
+
+                                    .prix {
+                                        font-size: 1.2rem;
+                                        font-weight: 300;
+                                        color: #ff9800;
+                                    }
+
+                                        .prix-barre {
+                                            font-size: 1rem;
+                                            text-decoration: line-through;
+                                            color: #999;
+                                        }
+
+                                            .produit-actions {
+                                                display: flex;
+                                            }
+
+/* Pagination */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 4rem 0;
+}
+
+    .page-item {
+        padding: 0.8rem 1.2rem;
+        border: 1px solid #ddd;
+        color: #333;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.3s ease;
+    }
+
+        .page-item:hover, .page-item.active {
+            background: #ff9800;
+            color: white;
+            border-color: #333;
+        }

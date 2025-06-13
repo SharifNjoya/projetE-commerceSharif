@@ -1,41 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <!--Fonts-awesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!--style css-->
-    <link rel="stylesheet" href="css/boutique.css">
-    <title>E-commerce Vetements</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>E-commerce Vêtements</title>
 </head>
 <body>
     <header>
-        <div class="log">
-            <img src="images/logo.png" alt="mon logo" class="logo">
-            <h1 class="star">STAR BOY</h1>
-        </div>
+        <!-- Navbar -->
         <div class="navbar">
+            <div class="log">
+                <img src="images/logo.png" alt="Logo STAR FASHON" class="logo">
+                <h1 class="star">STAR FASHON</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="apropos.html">A propos</a></li>
-                    <li><a href="#boutique">Boutique</a></li>
+                    <li class="dropdown">
+                        <a href="boutique.html">Boutique</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="boutique.html">Hommes</a></li>
+                            <li><a href="boutique.html">Femmes</a></li>
+                        </ul>
+                    </li>
                     <li><a href="servicesclient.html">Service client</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <div class="panier">
-                        <i class="fa-solid fa-user"></i>
-                        <li><a href="#moncompte">Mon compte</a></li>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
+                    <li class="panier">
+                        <a href="#moncompte"><i class="fa-solid fa-user"></i> Mon compte</a>
+                        <a href="#panier"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Hero Sect-->
+        <div class="boutique-container">
+            <div class="boutique-content">
+                <h2>Notre Collection Exclusive</h2>
+                <p>Découvrez nos dernières tendances mode pour hommes et femmes</p>
+            </div>
+        </div>
     </header>
     
+    <main id="boutique">
+        <!--catégorie -->
+        <section class="filtres">
+    <div class="filtres-container">
+        <div class="filtres-ligne">
+            <button class="add-cart active">Tous</button>
+            <button class="add-cart">Hommes</button>
+            <button class="add-cart">Femmes</button>
+        </div>
+        <div class="filtres-ligne">
+            <button class="add-cart">Nouveautés</button>
+            <button class="add-cart">Promotions</button>
+            <button class="add-cart">Best-sellers</button>
+        </div>
+    </div>
+</section>
+
+        <!-- produits -->
+        <section class="produits">
+            <h2>Nos Produits</h2>
+            <div class="produits-container">
+                <!-- Produit 1 -->
+                <div class="produit-card">
+                    <div class="produit-image">
+                        <img src="images/produits/imgbt1.png" alt="Veste en cuir">
+                        <span class="badge-nouveau">Nouveau</span>
+                        <button class="btn-favori"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="produit-info">
+                        <h3>Veste en cuir premium</h3>
+                        <div class="produit-prix">
+                            <span class="prix">199.99£</span>
+                            <span class="prix-barre">€249.99</span>
+                        </div>
+                        <div class="produit-actions">
+                            <button class="add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div class="produit-card">
+                    <div class="produit-image">
+                        <img src="images/produits/imgbt2.png" alt="Robe d'ete">
+                        <button class="btn-favori"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="produit-info">
+                        <h3>Robe d'ete</h3>
+                        <div class="produit-prix">
+                            <span class="prix">79.99£</span>
+                        </div>
+                        <div class="produit-actions">
+                            <button class="add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div class="produit-card">
+                    <div class="produit-image">
+                        <img src="images/produits/imgbt3.png" alt="Costume élegant">
+                        <span class="badge-promo">-20%</span>
+                        <button class="btn-favori"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="produit-info">
+                        <h3>Costume elegant Boss</h3>
+                        <div class="produit-prix">
+                            <span class="prix">159.99£</span>
+                            <span class="prix-barre">199.99£</span>
+                        </div>
+                        <div class="produit-actions">
+                            <button class="add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 4 -->
+                <div class="produit-card">
+                    <div class="produit-image">
+                        <img src="images/produits/imgbt4.png" alt="Jean tommy slim">
+                        <button class="btn-favori"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="produit-info">
+                        <h3>Jean slim Tommy </h3>
+                        <div class="produit-prix">
+                            <span class="prix">59.99£</span>
+                        </div>
+                        <div class="produit-actions">
+                            <button class="add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 5 -->
+                <div class="produit-card">
+                    <div class="produit-image">
+                        <img src="images/produits/imgbt5.png" alt="Pull e">
+                        <button class="btn-favori"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="produit-info">
+                        <h3>Pull en laine ZARA</h3>
+                        <div class="produit-prix">
+                            <span class="prix">89.99£</span>
+                        </div>
+                        <div class="produit-actions">
+                            <button class="add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 6 -->
+                <div class="produit-card">
+                    <div class="produit-image">
+                        <img src="images/produits/imgbt6.png" alt="Ensemble sportswear">
+                        <span class="badge-nouveau">Nouveau</span>
+                        <button class="btn-favori"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="produit-info">
+                        <h3>Ensemble sportswear GUCCI</h3>
+                        <div class="produit-prix">
+                            <span class="prix">129.99£</span>
+                        </div>
+                        <div class="produit-actions">
+                            <button class="add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 7 -->
+                <div class="produit-card">
+                    <div class="produit-image">
+                        <img src="images/produits/imgbt7.png" alt="Manteau d'hiver">
+                        <span class="">-15%</span>
+                        <button class="btn-favori"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="produit-info">
+                        <h3>Manteau d'hiver Nike</h3>
+                        <div class="produit-prix">
+                            <span class="prix">179.99£</span>
+                            <span class="prix-barre">209.99£</span>
+                        </div>
+                        <div class="produit-actions">
+                            <button class="add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 8 -->
+                <div class="produit-card">
+                    <div class="produit-image">
+                        <img src="images/produits/imgbt8.png" alt="Chemise habillee">
+                        <button class="btn-favori"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="produit-info">
+                        <h3>Chemise Doree habillée</h3>
+                        <div class="produit-prix">
+                            <span class="prix">69.99£</span>
+                        </div>
+                        <div class="produit-actions">
+                            <button class="add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 9 -->
+                <div class="produit-card">
+                    <div class="produit-image">
+                        <img src="images/produits/imgbt9.png" alt="Jupe longue">
+                        <button class="btn-favori"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="produit-info">
+                        <h3>Jupe longue élégante</h3>
+                        <div class="produit-prix">
+                            <span class="prix">75.99£</span>
+                        </div>
+                        <div class="produit-actions">
+                            <button class="add-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <section class="pagination">
+            <div class="pagination-container">
+                <a href="#" class="page-item active">1</a>
+                <a href="#" class="page-item">2</a>
+                <a href="#" class="page-item">3</a>
+                <a href="#" class="page-item">Suivant <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-colonne">
+                <h3>A propos</h3>
+                <p>STAR FASHON, votre boutique de vêtements tendance et styles. Qualité et élégance au rendez-vous.</p>
+            </div>
+            <div class="footer-colonne">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="servicesclient.html">Services Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-colonne">
+                <h3>Suivez-nous</h3>
+                <div class="icons-reseau">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <p>&copy; 2025 STAR FASHON. Tous droits réservés</p>
+        </div>
+    </footer>
 </body>
 </html>
