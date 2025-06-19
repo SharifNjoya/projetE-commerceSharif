@@ -176,16 +176,20 @@ header {
             }
 
 /*products sect*/
-.produits-container {
+.produits {
     padding: 3.2rem 1.3rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-    .produits-container h2 {
+    .produits h2 {
         font-family: 'Playfair', serif;
         font-size: 2rem;
         font-weight: 300;
         margin-bottom: 2rem;
+        width: 100%;
     }
 
         .produits-grid {
@@ -194,6 +198,7 @@ header {
             gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            width: 100%;
         }
 
             .produit-card {
@@ -227,7 +232,7 @@ header {
 
 .add-cart {
     background: var(--primary-color);
-    color: var(--white);
+    color: var(--l-bg);
     border: none;
     padding: 0.7rem 1.3rem;
     margin-bottom: 1rem;
@@ -244,6 +249,18 @@ header {
 /* Bestsellers section */
 .bestsellers {
     background-color: var(--l-bg);
+    padding: 3.2rem 1.3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bestsellers h2 {
+    font-family: 'Playfair', serif;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    width: 100%;
 }
 
 /*newsleter*/
@@ -291,3 +308,62 @@ header {
                         .newsletter-form button {
                             padding: 0.8rem 1.5rem;
                         }
+
+.burger {
+  display: none; 
+  cursor: pointer;
+  z-index: 1001;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+.burger.active i.fa-bars {
+  display: none;
+}
+.burger.active::after {
+  content: "\f00d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul.active {
+    display: flex;
+  }
+  nav li {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    display: none;
+    padding: 0;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: none; 
+  }
+  .dropdown-menu.show {
+    display: block;
+  }
+}

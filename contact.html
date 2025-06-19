@@ -1,41 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <!--Fonts-awesome-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <!--style css-->
-    <link rel="stylesheet" href="css/contact.css">
-    <title>E-commerce Vetements</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contact - STAR FASHON</title>
 </head>
 <body>
     <header>
-        <div class="log">
-            <img src="images/logo.png" alt="mon logo" class="logo">
-            <h1 class="star">STAR BOY</h1>
-        </div>
+        <!-- Navbar -->
         <div class="navbar">
+            <div class="log">
+                <img src="images/logo.png" alt="Logo STAR FASHON" class="logo">
+                <h1 class="star">STAR FASHON</h1>
+            </div>
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="apropos.html">A propos</a></li>
-                    <li><a href="boutique.html">Boutique</a></li>
+                    <li class="dropdown">
+                        <a href="boutique.html">Boutique</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="boutique.html">Hommes</a></li>
+                            <li><a href="boutique.html">Femmes</a></li>
+                        </ul>
+                    </li>
                     <li><a href="servicesclient.html">Service client</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <div class="panier">
-                        <i class="fa-solid fa-user"></i>
-                        <li><a href="#moncompte">Mon compte</a></li>
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="panier">
+                        <a href="#moncompte"><i class="fa-solid fa-user"></i> Mon compte</a>
+                        <a href="#panier"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Hero Section Contact -->
+        <div class="contact-hero">
+            <div class="contact-hero-content">
+                <h2>Contactez-nous</h2>
+                <p>Notre équipe est à votre écoute</p>
+            </div>
+        </div>
     </header>
     
+    <main id="contact">
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-form">
+                    <div class="form-background"></div>
+                    <h3>Envoyez un message</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" id="prenom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="nom">Nom *</label>
+                            <input type="text" id="nom" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service concerné *</label>
+                            <select id="service" required>
+                                <option value="">--- Sélectionnez ---</option>
+                                <option value="commande">Suivi de commande</option>
+                                <option value="retour">Retour/Échange</option>
+                                <option value="produit">Question sur un produit</option>
+                                <option value="autre">Autre demande</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="add-cart">Envoyer</button>
+                    </form>
+                </div>
+                
+                <div class="contact-infos">
+                    <h3>Nos coordonnées</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>place de l'ecole des cadets 6, 5000 Namur</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>01234569875</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>sharifnjoya@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lundi a Vendredi :9h-19h<br>Samedi :10h-18h <br>Dimanche: Ferme</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-colonne">
+                <h3>A propos</h3>
+                <p>STAR FASHON, votre boutique de vêtements tendance et styles. Qualité et élégance au rendez-vous.</p>
+            </div>
+            <div class="footer-colonne">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="servicesclient.html">Services Clients</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-colonne">
+                <h3>Suivez-nous</h3>
+                <div class="icons-reseau">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-top">
+            <p>&copy; 2025 STAR FASHON. Tous droits réservés</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

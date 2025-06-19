@@ -1,6 +1,4 @@
 /*a propos*/
-/* Header spécial pour la page À propos */
-
 .about-container {
     position: relative;
     height: 100vh;
@@ -158,3 +156,62 @@
             color: #ffc107;
             font-size: 0.9rem;
         }
+
+/* responsive*/
+
+/* Tablette */
+@media (max-width: 962px) {
+  .about-container {
+    height: 80vh;
+  } 
+  .histoire-content {
+    flex-direction: column;
+    gap: 2rem;
+  } 
+  .marques-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  } 
+  .temoignages-container {
+    flex-direction: column;
+    align-items: center;
+  }
+    .temoignage-card {
+        max-width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    height: 60vh;
+    margin-top: 70px;
+  }  
+    .about-content {
+        padding: 1rem;
+    }
+        .about-content h2 {
+            font-size: 1.5rem;
+        }
+  .histoire-text,
+  .histoire-content img {
+    min-width: 100%;
+  }
+  .marques-container {
+    grid-template-columns: 1fr;
+  }
+    .marque-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+  .temoignage-card {
+    max-width: 100%;
+    width: 100%;
+  } 
+  .client img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+  }
+}
